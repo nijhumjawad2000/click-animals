@@ -1,0 +1,57 @@
+body{
+    text-align: center;
+}
+.container{
+    background: url(background.jpg);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pic{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    top: 38vh;
+}
+img{
+    height: 22vh;
+    width: 20vw;
+}
+img:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  #lilBox{
+    color: #0c0b06;
+    font-size: 100px;
+    box-shadow: -1px 4px 50px 13px black;
+    width: 11vw;
+    position: relative;
+    left: 50%;
+  }
+
+  p{
+    position: relative;
+    top: -58vh;
+    font-size: 56px;
+    color: #fff3cd;
+    box-shadow: 24px 2px 88px 27px black;
+}
